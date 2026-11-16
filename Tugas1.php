@@ -51,14 +51,11 @@
         <?php
         for ($baris = 1; $baris <= 10; $baris++) {
             echo "<tr>";
-            // Kolom pertama (header samping berwarna hijau)
             echo "<td class='header-hijau'>$baris</td>";
 
-            // Isi perkalian matriks
             for ($kolom = 1; $kolom <= 10; $kolom++) {
                 $hasil = $baris * $kolom;
                 
-                // Cek ganjil (kuning) atau genap (biru cyan)
                 $warna = ($hasil % 2 != 0) ? "ganjil-kuning" : "genap-biru";
                 
                 echo "<td class='$warna'>$hasil</td>";
